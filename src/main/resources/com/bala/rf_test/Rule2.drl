@@ -1,2 +1,12 @@
 package com.bala.rf_test;
 
+rule "Rule2"
+no-loop true
+ruleflow-group "RFGroup2"
+
+when
+	$t:RObject($name: field1, $id: field2 );
+then
+    System.out.println("Rule2 executed");
+    System.out.println("Getting value from Rule 1 object: " + $name + ": " + $id);
+end
