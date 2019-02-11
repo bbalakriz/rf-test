@@ -8,5 +8,5 @@ when
 	eval(1==1)
 then
     System.out.println("Rule1 executed");
-    insert(new TestObject("Test", 100));
+    insert(new RObject("Test", 100));
 end
