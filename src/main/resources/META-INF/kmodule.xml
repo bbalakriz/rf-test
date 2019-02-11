@@ -1,1 +1,7 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+	<kbase name="fd-rules" equalsBehavior="equality" eventProcessingMode="cloud" packages="com.bala.rf_test">
+		<ksession name="fd-session-stateful" default="true" type="stateful" />
+		<ksession name="fd-session" default="false" type="stateless" />
+	</kbase>
+</kmodule>
